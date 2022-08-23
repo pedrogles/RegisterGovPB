@@ -7,10 +7,10 @@ function RegisterList() {
             <table className="table">
                 <thead>
                     <tr>
-                        <th>Nome</th>
-                        <th>E-mail</th>
-                        <th>Idade</th>
-                        <th>Imagem</th>
+                        <th className='th'>Nome</th>
+                        <th className='th'>E-mail</th>
+                        <th className='th'>Idade</th>
+                        <th className='th'>Imagem</th>
                     </tr>
                 </thead>
                 <tbody className="tbody">
