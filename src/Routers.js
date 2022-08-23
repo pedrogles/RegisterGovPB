@@ -7,7 +7,7 @@ import RegisterList from './pages/registerList/RegisterList';
 function Routers() {
     return (
         <Routes>
-            <Route exact path="/home" element={<Home />}/>
+            <Route exact path="/" element={<Home />}/>
             <Route exact path="/cadastro" element={<Register />} />
             <Route exact path="/lista-de-cadastrados" element={<RegisterList />} />
         </Routes>
