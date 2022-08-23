@@ -1,0 +1,108 @@
+#navbar{
+    display: flex;
+    flex-direction: column;
+    height: 4rem;
+    width: 100%;
+    background-color: #F5F5F5;
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 100px;
+        .logo img {
+            height: 60px;
+            width: 150px;
+        }
+        .itens {
+            ul {
+                display: flex;
+                flex-direction: row;
+            }
+            li {
+                list-style: none;
+                padding: 1rem;
+                .link {
+                    font-size: 0.8rem;
+                    color: #000000;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .colorRow {
+        width: 100%;
+        height: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        .colorOne {
+            width: 25vw;
+            background-color: #e9e945;
+        }
+        .colorTwo {
+            width: 25vw;
+            background-color: #df2e2e;
+        }
+        .colorThree {
+            width: 25vw;
+            background-color: #4747ce;
+        }
+        .colorFour {
+            width: 25vw;
+            background-color: #28ad28;
+        }
+    }
+}
+@media (max-width: 699px){
+    #navbar {
+            height: 0;
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+            .logo img {
+                display: none;
+            }
+            .itens {
+                position: fixed;
+                background-color: #000000;
+                margin-top: 4rem;
+                height: 1.5rem;
+                text-align: center;
+                border-radius: 20px;
+                z-index: 1;
+                li {
+                    padding: 0rem 0.5rem 0rem 0.5rem;
+                    .link {
+                        color: #ffffff;
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+        .colorRow {
+            display: none;
+        }
+    }
+}
+@media (min-width: 700px) and (max-width: 900px){
+    
+}
+@media (min-width: 1500px){
+    #navbar {
+        .nav-container {
+            .logo img {
+                height: 80px;
+                width: 200px;
+            }
+            .itens {
+                li {
+                    .link {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

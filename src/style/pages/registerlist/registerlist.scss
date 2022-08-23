@@ -1,0 +1,31 @@
+.registerlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    h2 {
+        margin: 1rem;
+    }
+    .table {
+        width: 500px;
+        height: 250px;
+        outline: solid 0.1rem black;
+    }
+}
+@media (max-width: 699px){
+    .registerlist {
+        .table {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+@media (min-width: 1366px){
+    .registerlist {
+        .table {
+            width: 600px;
+            height: 400px;
+        }
+    }
+}

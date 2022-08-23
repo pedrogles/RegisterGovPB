@@ -1,0 +1,177 @@
+#footer{ 
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 100%;
+    background-color: #F5F5F5;
+    .colorRow {
+        width: 100%;
+        height: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        .colorOne {
+            width: 25vw;
+            background-color: #e9e945;
+        }
+        .colorTwo {
+            width: 25vw;
+            background-color: #df2e2e;
+        }
+        .colorThree {
+            width: 25vw;
+            background-color: #4747ce;
+        }
+        .colorFour {
+            width: 25vw;
+            background-color: #28ad28;
+        }
+    }
+    .SocialRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .SocialFollow {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            h4 {
+                width: 100px;
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                li {
+                    padding: 1rem;
+                    list-style: none;
+                    a {
+                        color: #000000;
+                        .icons {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .SocialImage img {
+            width: 200px;
+            height: 90px;
+        }
+    }
+    .LinksRow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .links{
+            display: flex;
+            flex-direction: row;
+            .governadoria {
+                font-weight: normal;
+            }
+            li {
+                text-align: center;
+                font-weight: bold;
+                padding: 1rem;
+                list-style: none;
+                a {
+                    color: #000000;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: #ff0000;
+                }
+            }
+        }
+    }
+    .AddressRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        p {
+            text-align: center;
+        }
+        img {
+            width: 200px;
+            height: 70px;
+        }
+    }
+}
+
+@media (max-width: 699px){
+    #footer{
+        height: 58rem;
+        .SocialRow {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+            background-color: #F5F5F5;
+            .SocialImage img {
+                height: 60px;
+                width: 140px;
+            }
+        }
+        .LinksRow {
+            display: flex;
+            flex-direction: row;
+            background-color: #F5F5F5;
+            .links {
+                display: flex;
+                flex-direction: column;
+                li {
+                    padding: 0.5rem;
+                    a {
+                        font-size: 0.78rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 700px) and (max-width: 900px){
+    #footer{
+        height: 22.5rem;
+        .SocialRow {
+            .SocialImage img {
+                height: 60px;
+                width: 140px;
+            }
+        }
+        .LinksRow {
+            .links {
+                li {
+                    padding: 0.5rem;
+                    a {
+                        font-size: 0.78rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 901px) and (max-width: 1299px){
+    #footer{
+        height: 22.5rem;
+        .SocialRow {
+            .SocialImage img {
+                height: 60px;
+                width: 140px;
+            }
+        }
+        .LinksRow {
+            .links {
+                li {
+                    padding: 0.5rem;
+                    a {
+                        font-size: rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1300px){
+    
+}
