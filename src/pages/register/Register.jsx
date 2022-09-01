@@ -4,7 +4,7 @@ function Register() {
     
     return (
         <div id='form'>
-            <form name="form" action="" method="POST">
+            <form id="formCadastro" name="form" action="" method="POST">
                 <fieldset name="fieldset" className="fieldset">
                     <legend>Cadastro</legend>
                     <input 
@@ -31,13 +31,12 @@ function Register() {
                     accept=".png" ></input>
                     
                     <div className='btnContainer'>
-                        <button 
-                        id="btnSubmit" 
+                        <button  
                         type="reset" >Limpar</button>
                         <button 
-                        id="btnSubmit" 
                         type="submit" 
-                        disabled="disabled">Enviar</button>
+                        disabled="disabled"
+                        form='formCadastro'>Enviar</button>
                     </div>
                 </fieldset>
             </form>
