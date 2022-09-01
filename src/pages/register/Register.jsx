@@ -4,14 +4,19 @@ function Register() {
     
     return (
         <div id='form'>
-            <form id="formCadastro" name="form" action="" method="POST">
+            <form id="registrationForm" name="form" action="" method="POST">
                 <fieldset name="fieldset" className="fieldset">
                     <legend>Cadastro</legend>
                     <input 
-                    id="nome"
+                    id="name"
                     type="text"  
                     placeholder="Nome"  
                     pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"></input>
+
+                    <input 
+                    id="cpf"
+                    type="number"
+                    placeholder="CPF"></input>
 
                     <input 
                     id="email"
@@ -19,7 +24,7 @@ function Register() {
                     placeholder="E-mail"></input>
 
                     <input 
-                    id="idade"
+                    id="age"
                     type="date" 
                     placeholder="Data de Nascimento"></input>
 
@@ -34,7 +39,7 @@ function Register() {
                         <button 
                         type="submit" 
                         disabled="disabled"
-                        form='formCadastro'>Enviar</button>
+                        form='registrationForm'>Enviar</button>
                     </div>
                 </fieldset>
             </form>
