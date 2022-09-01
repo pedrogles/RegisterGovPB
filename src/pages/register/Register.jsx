@@ -11,7 +11,8 @@ function Register() {
                     id="name"
                     type="text"  
                     placeholder="Nome"  
-                    pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"></input>
+                    pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
+                    autoFocus></input>
 
                     <input 
                     id="cpf"
@@ -21,6 +22,7 @@ function Register() {
                     <input 
                     id="email"
                     type="email" 
+                    autoComplete='email'
                     placeholder="E-mail"></input>
 
                     <input 
