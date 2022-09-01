@@ -4,7 +4,8 @@ function Register() {
     
     return (
         <div id='form'>
-            <form id="registrationForm" name="form" action="" method="POST">
+            <form id="registrationForm" name="form" action="" method="POST" 
+            encType='multipart/form-data'>
                 <fieldset name="fieldset" className="fieldset">
                     <legend>Cadastro</legend>
                     <div className='inputsContainer'>
@@ -21,6 +22,7 @@ function Register() {
                         <input 
                         id="cpf"
                         type="number"
+                        inputMode='numeric'
                         placeholder="Digite seu cpf..."></input>
                     </div>
 
@@ -54,7 +56,7 @@ function Register() {
                         type="reset" >Limpar</button>
                         <button 
                         type="submit" 
-                        disabled="disabled"
+                        disabled
                         form='registrationForm'>Enviar</button>
                     </div>
                 </fieldset>
