@@ -4,7 +4,7 @@ function Register() {
     
     return (
         <div id='form'>
-            <form name="form" action="" method="GET">
+            <form name="form" action="" method="POST">
                 <fieldset name="fieldset" className="fieldset">
                     <legend>Cadastro</legend>
                     <input 
@@ -29,11 +29,16 @@ function Register() {
                     id="imgFile"
                     type="file" 
                     accept=".png" ></input>
-
-                    <button 
-                    id="btnSubmit" 
-                    type="submit" 
-                    disabled="disabled">Enviar</button>
+                    
+                    <div className='btnContainer'>
+                        <button 
+                        id="btnSubmit" 
+                        type="reset" >Limpar</button>
+                        <button 
+                        id="btnSubmit" 
+                        type="submit" 
+                        disabled="disabled">Enviar</button>
+                    </div>
                 </fieldset>
             </form>
         </div>
