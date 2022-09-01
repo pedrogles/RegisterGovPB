@@ -20,10 +20,8 @@ function Register() {
 
                     <input 
                     id="idade"
-                    type="number" 
-                    min="0"
-                    max="120" 
-                    placeholder="Idade"></input>
+                    type="date" 
+                    placeholder="Data de Nascimento"></input>
 
                     <input 
                     id="imgFile"
