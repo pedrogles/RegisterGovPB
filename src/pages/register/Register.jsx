@@ -7,33 +7,47 @@ function Register() {
             <form id="registrationForm" name="form" action="" method="POST">
                 <fieldset name="fieldset" className="fieldset">
                     <legend>Cadastro</legend>
-                    <input 
-                    id="name"
-                    type="text"  
-                    placeholder="Nome"  
-                    pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
-                    autoFocus></input>
+                    <div className='inputsContainer'>
+                        <label htmlFor="name">Nome:</label>
+                        <input 
+                        id="name"
+                        type="text"  
+                        placeholder="Digite seu nome..."  
+                        pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
+                        autoFocus></input>
+                    </div>
+                    <div className='inputsContainer'>
+                        <label htmlFor="cpf">CPF:</label>
+                        <input 
+                        id="cpf"
+                        type="number"
+                        placeholder="Digite seu cpf..."></input>
+                    </div>
 
-                    <input 
-                    id="cpf"
-                    type="number"
-                    placeholder="CPF"></input>
+                    <div className='inputsContainer'>
+                        <label htmlFor="email">E-mail:</label>
+                        <input 
+                        id="email"
+                        type="email" 
+                        autoComplete='email'
+                        placeholder="Digite seu e-mail..."></input>
+                    </div>
 
-                    <input 
-                    id="email"
-                    type="email" 
-                    autoComplete='email'
-                    placeholder="E-mail"></input>
+                    <div className='inputsContainer'>
+                        <label htmlFor="age">Data de Nascimento:</label>
+                        <input 
+                        id="age"
+                        type="date" 
+                        placeholder="Data de Nascimento"></input>
+                    </div>
 
-                    <input 
-                    id="age"
-                    type="date" 
-                    placeholder="Data de Nascimento"></input>
-
-                    <input 
-                    id="imgFile"
-                    type="file" 
-                    accept=".png" ></input>
+                    <div className='inputsContainer'>
+                        <label htmlFor="imgFile">Foto:</label>
+                        <input 
+                        id="imgFile"
+                        type="file" 
+                        accept=".png" ></input>
+                    </div>
                     
                     <div className='btnContainer'>
                         <button  
